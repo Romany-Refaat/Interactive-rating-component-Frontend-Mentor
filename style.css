@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: overpass;
+    src: url(interactive-rating-component-main/interactive-rating-component-main/Overpass/Overpass-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    color: white;
+    font-family: overpass;
+    overflow: hidden;
+}
+
+.container {
+    border: 1px solid hsl(213, 19%, 18%);
+    background-color: hsl(213, 19%, 18%);
+    position: absolute;
+    top: 15%;
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: 35%;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+}
+
+.star-div {
+    border-radius: 50%;
+    background-color: #2b3441;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0;
+}
+
+.star {
+    position: relative;
+    left: 12px;
+    top: 12px;
+}
+
+.how {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.please {
+    font-weight: 500;
+    color: hsl(216, 12%, 54%);
+    margin-top: 10px;
+}
+
+.nums a {
+    display: inline;
+    color: hsl(217, 12%, 63%);
+    background-color: #2b3441;
+    border-radius: 50%;
+    border: 0px solid #3c495a;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+    transition: .2s;
+    text-decoration: none;
+}
+
+.nums a:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.f1 {
+    margin: 0 5% 0 0;
+}
+
+.nums .f1:focus {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+.f2 {
+    margin: 0 5% 0 0;
+}
+
+.nums .f2:focus {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+
+.f3 {
+    margin: 0 5% 0 0;
+}
+
+.nums .f3:focus {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+.f4 {
+    margin: 0 5% 0 0;
+}
+
+.nums .f4:focus {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+.nums .f5:focus {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+.submit {
+    position: relative;
+    top: 90px;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    font-weight: 700;
+    outline: none;
+    width: 95%;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid hsl(25, 97%, 53%);
+    transition: .38s;
+    text-decoration: none;
+}
+
+.submit:hover {
+    color: hsl(25, 97%, 53%);
+    background-color:white;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen 
+  and (max-device-width: 768px) {
+    .container {
+        position: absolute;
+        right: 10%;
+        top: 25%;
+        width: 80%;
+        height: 50%;
+    }
+    .please {
+        line-height: 150%;
+        position: relative;
+        top: 10%;
+    }
+    .star {
+        position: relative;
+        top: 25%;
+        overflow: hidden;
+    }
+    .nums * {
+        margin-left: 5%;
+        
+    }
+
+    .nums {
+        position: relative;
+        top: 20%;
+    }
+    .submit {
+        margin-left: 1%;
+        margin-top: 25%;
+    }
+}
+
+@media screen 
+  and (max-device-width: 375px) {
+    .container {
+        width: 80%;
+        height: 48%;
+        position: absolute;
+        left: -25%;
+    }
+    .nums * {
+        margin-left: -6%;
+        position: relative;
+        top: -10px;
+    }
+
+    .nums {
+        position: relative;
+        top: 2%;
+        display: flex;
+        justify-content: center;
+    }
+    .submit {
+        position: relative;
+        top: 2%;
+    }
+  }
